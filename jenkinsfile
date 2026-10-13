@@ -22,5 +22,11 @@ pipeline {
                 sh 'cd src && java Application.Test'
             }
         }
+        stage('test message')
+        {
+            steps {
+                echo 'Hello from github'
+            }
+        }
     }
 }
